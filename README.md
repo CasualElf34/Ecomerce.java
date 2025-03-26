@@ -16,18 +16,31 @@ ecommerce-website
 │   │   │           └── ecommerce
 │   │   │               ├── EcommerceApplication.java
 │   │   │               ├── controllers
-│   │   │               │   └── ProductController.java
+│   │   │               │   ├── ProductController.java
+│   │   │               │   ├── ViewController.java
+│   │   │               │   └── UserController.java
 │   │   │               ├── models
 │   │   │               │   ├── Product.java
 │   │   │               │   ├── User.java
 │   │   │               │   └── Order.java
 │   │   │               ├── repositories
-│   │   │               │   └── ProductRepository.java
+│   │   │               │   ├── ProductRepository.java
+│   │   │               │   ├── UserRepository.java
+│   │   │               │   └── OrderRepository.java
 │   │   │               ├── services
-│   │   │               │   └── ProductService.java
-│   │   │               └── utils
-│   │   │                   └── Constants.java
+│   │   │               │   ├── ProductService.java
+│   │   │               │   ├── UserService.java
+│   │   │               │   └── OrderService.java
 │   │   └── resources
+│   │       ├── static
+│   │       │   ├── css
+│   │       │   │   └── styles.css
+│   │       │   ├── js
+│   │       │   │   ├── app.js
+│   │       │   │   └── add-product.js
+│   │       ├── templates
+│   │       │   ├── index.html
+│   │       │   └── add-product.html
 │   │       └── application.properties
 ├── .gitignore
 ├── pom.xml
@@ -38,8 +51,9 @@ ecommerce-website
 - **Gestion des Produits** : Création, lecture, mise à jour et suppression de produits via `ProductController`.
 - **Gestion des Utilisateurs** : Représentation des utilisateurs avec la classe `User`.
 - **Gestion des Commandes** : Suivi des commandes passées par les utilisateurs avec la classe `Order`.
-- **Accès aux Données** : Utilisation de `ProductRepository` pour les opérations CRUD.
-- **Logique Métier** : Implémentation de la logique métier dans `ProductService`, utilisant l'héritage et le polymorphisme.
+- **Accès aux Données** : Utilisation de `ProductRepository`, `UserRepository` et `OrderRepository` pour les opérations CRUD.
+- **Logique Métier** : Implémentation de la logique métier dans `ProductService`, `UserService` et `OrderService`, utilisant l'héritage et le polymorphisme.
+- **Interface Utilisateur** : Pages HTML pour afficher et ajouter des produits, avec des fichiers CSS et JavaScript pour l'interactivité.
 
 ## Configuration
 Pour exécuter l'application, assurez-vous d'avoir Java et Maven installés. Modifiez le fichier `application.properties` pour configurer les paramètres de connexion à la base de données.
@@ -51,7 +65,9 @@ Pour exécuter l'application, assurez-vous d'avoir Java et Maven installés. Mod
 4. Exécutez l'application : `mvn spring-boot:run`
 
 ## Auteurs
-- [Votre Nom] - Développeur principal
+- Guillaume Maël    - Développeur principal
+- Cartagena Lucas   - Développeur
+- Vidal Lois        - Développeur 
 
 ## License
 Ce projet est sous licence MIT.
