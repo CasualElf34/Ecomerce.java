@@ -1,0 +1,16 @@
+/home/maelg/Java/Ecomerce.java/src/main/java/com/commerce/ecommerce/controllers/UserController.java
+/home/maelg/Java/Ecomerce.java/src/main/java/com/commerce/ecommerce/repositories/UserRepository.java
+/home/maelg/Java/Ecomerce.java/src/main/java/com/commerce/ecommerce/EcommerceApplication.java
+/home/maelg/Java/Ecomerce.java/src/main/java/com/commerce/ecommerce/models/Product.java
+/home/maelg/Java/Ecomerce.java/src/main/java/com/commerce/ecommerce/repositories/OrderRepository.java
+/home/maelg/Java/Ecomerce.java/src/main/java/com/commerce/ecommerce/services/ProductService.java
+/home/maelg/Java/Ecomerce.java/src/main/java/com/commerce/ecommerce/models/Order.java
+/home/maelg/Java/Ecomerce.java/src/main/java/com/commerce/ecommerce/services/UserService.java
+/home/maelg/Java/Ecomerce.java/src/main/java/com/commerce/ecommerce/models/User.java
+/home/maelg/Java/Ecomerce.java/src/main/java/com/commerce/ecommerce/services/OrderService.java
+/home/maelg/Java/Ecomerce.java/src/main/java/com/commerce/ecommerce/controllers/HomeController.java
+/home/maelg/Java/Ecomerce.java/src/main/java/com/commerce/ecommerce/controllers/ViewController.java
+/home/maelg/Java/Ecomerce.java/src/main/java/com/commerce/ecommerce/controllers/OrderController.java
+/home/maelg/Java/Ecomerce.java/src/main/java/com/commerce/ecommerce/repositories/ProductRepository.java
+/home/maelg/Java/Ecomerce.java/src/main/java/com/commerce/ecommerce/controllers/ProductController.java
+/home/maelg/Java/Ecomerce.java/src/main/java/com/commerce/ecommerce/utils/Constants.java

@@ -1,49 +1,40 @@
 package com.commerce.ecommerce.models;
 
-import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
 public class Order {
-    private String orderId;
-    private String userId;
-    private Date orderDate;
-    private double totalAmount;
 
-    public Order(String orderId, String userId, Date orderDate, double totalAmount) {
-        this.orderId = orderId;
-        this.userId = userId;
-        this.orderDate = orderDate;
-        this.totalAmount = totalAmount;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String product;
+    private int quantity;
+
+    public Long getId() {
+        return id;
     }
 
-    public String getOrderId() {
-        return orderId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public void setOrderId(String orderId) {
-        this.orderId = orderId;
+    public String getProduct() {
+        return product;
     }
 
-    public String getUserId() {
-        return userId;
+    public void setProduct(String product) {
+        this.product = product;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public int getQuantity() {
+        return quantity;
     }
 
-    public Date getOrderDate() {
-        return orderDate;
-    }
-
-    public void setOrderDate(Date orderDate) {
-        this.orderDate = orderDate;
-    }
-
-    public double getTotalAmount() {
-        return totalAmount;
-    }
-
-    public void setTotalAmount(double totalAmount) {
-        this.totalAmount = totalAmount;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 }
